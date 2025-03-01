@@ -1,7 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/index.css';
-import './css/App.css';
-import './css/header.css';
-export { Header } from "./components/header";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './css/index.css'
+import App from './App.tsx'
 
- 
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
